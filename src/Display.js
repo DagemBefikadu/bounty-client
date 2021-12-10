@@ -18,6 +18,7 @@ export default function Display(props) {
         display = (
             <div className="showBounty">
                 <h2>{props.bounty.name}</h2>
+                <h3>{props.bounty.client}</h3>
                 <h3>Wanted For: {props.bounty.wantedFor}</h3>
                 <p>Last Seen: {props.bounty.lastSeen ? props.bounty.lastSeen: 'Unknown'}</p>
             </div>
